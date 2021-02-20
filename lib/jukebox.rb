@@ -55,6 +55,8 @@ def run(my_songs)
       puts "Invalid command"
       input = gets.strip
     end
+    break if input == "exit"
+    input = gets.strip
   end
-  break if input == "exit"
+
 end
