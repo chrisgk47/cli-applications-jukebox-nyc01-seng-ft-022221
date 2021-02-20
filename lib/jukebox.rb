@@ -1,3 +1,4 @@
+require 'pry'
 def help
   puts "I accept the following commands:"
   puts /- help : displays this help message/
@@ -19,5 +20,6 @@ def play(array)
     puts "Playing <#{input}>"
   else
     puts "Invalid input, please try again"
+    binding.pry
   end
 end
