@@ -33,7 +33,7 @@ def run(my_songs)
   puts "Please enter a command:"
   input = gets.strip
 
-  while input != "exit" 
+  while input != "exit"
     prompt = "Please enter a command:"
     case input
     when "help"
@@ -56,5 +56,3 @@ def run(my_songs)
     end
   end
 end
-     
-    
