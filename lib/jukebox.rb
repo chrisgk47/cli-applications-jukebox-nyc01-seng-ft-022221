@@ -48,9 +48,8 @@ def run(my_songs)
       play(my_songs)
       puts prompt
       input = gets.strip
-    when "exit"
+    break when "exit"
       exit_jukebox
-      break
     else
       puts "Invalid command"
       input = gets.strip
