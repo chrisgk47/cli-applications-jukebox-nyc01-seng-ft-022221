@@ -49,7 +49,7 @@ def run(songs)
       puts prompt
       input = gets.strip
     when "exit"
-      exit_jukebox(songs)
+      exit_jukebox
       break
     else
       puts "Invalid command"
