@@ -48,11 +48,9 @@ def run(songs)
       play(songs)
       puts prompt
       input = gets.strip
-    when "exit"
-      exit_jukebox
-      break
     else
       help
     end
   end
+  exit_jukebox
 end
