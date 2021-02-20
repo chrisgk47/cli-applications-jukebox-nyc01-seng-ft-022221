@@ -29,18 +29,32 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(my_songs)
   puts "Please enter a command:"
   input = gets.strip
 
-  while input != "exit" do
-    input = gets.strip
-    if input == help.include?(input)
-      help(input)
-    elsif input == input.include?("play")
-      play(input)
-    else
+  while input != "exit" 
+    prompt = "Please enter a command:"
+    case input
+    when "help"
+      help
+      puts prompt
+      input = gets.strip
+    when "list"
+      list(my_songs)
+      puts prompt
+      input = gets.strip
+    when "play"
+      play(my_songs)
+      puts prompt
+      input = gets.strip
+    when "exit"
       exit_jukebox
+    else
+      puts "Invalid command"
+      input = gets.strip
     end
   end
 end
+     
+    
