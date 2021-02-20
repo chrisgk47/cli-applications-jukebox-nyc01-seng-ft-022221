@@ -1,4 +1,4 @@
-require 'pry'
+
 def help
   puts "I accept the following commands:"
   puts /- help : displays this help message/
@@ -16,10 +16,9 @@ end
 def play(song_array)
   puts "Please enter a song name or number:"
   input = gets.strip
-  if input == song_array.include?(input)
+  if input == list(song_array).include?(input)
     puts "Playing <#{input}>"
   else
     puts "Invalid input, please try again"
-    binding.pry
   end
 end
