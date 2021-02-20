@@ -29,7 +29,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run(my_songs)
+def run(songs)
   puts "Please enter a command:"
   input = gets.strip
 
@@ -41,22 +41,21 @@ def run(my_songs)
       puts prompt
       input = gets.strip
     when "list"
-      list(my_songs)
+      list(songs)
       puts prompt
       input = gets.strip
     when "play"
-      play(my_songs)
+      play(songs)
       puts prompt
       input = gets.strip
     when "exit"
       input = gets.strip
       exit_jukebox
+    break if exit_jukebox
     else
       puts "Invalid command"
       input = gets.strip
     end
-    break if input == "exit"
-    input = gets.strip
   end
 
 end
