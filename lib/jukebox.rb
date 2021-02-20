@@ -16,7 +16,7 @@ end
 def play(song_array)
   puts "Please enter a song name or number:"
   input = gets.strip
-  if input == array.include?(input)
+  if input == song_array.include?(input)
     puts "Playing <#{input}>"
   else
     puts "Invalid input, please try again"
