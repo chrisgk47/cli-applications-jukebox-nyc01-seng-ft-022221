@@ -28,3 +28,19 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def run
+  puts "Please enter a command:"
+  input = gets.strip
+
+  while input != "exit" do
+    input = gets.strip
+    if input == help.include?(input)
+      help(input)
+    elsif input == input.include?("play")
+      play(input)
+    else
+      exit_jukebox
+    end
+  end
+end
