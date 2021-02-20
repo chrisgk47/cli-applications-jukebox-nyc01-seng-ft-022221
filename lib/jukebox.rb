@@ -24,3 +24,8 @@ def play(song_array)
     puts "Invalid input, please try again"
   end
 end
+
+def exit_jukebox
+  puts "Goodbye"
+end
+
