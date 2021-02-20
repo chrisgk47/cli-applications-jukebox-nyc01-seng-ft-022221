@@ -9,4 +9,5 @@ end
 def list(array)
   array.each_with_index do |song, index|
     puts "#{index + 1}. #{song}"
-  end 
+  end
+end
