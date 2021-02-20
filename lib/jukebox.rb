@@ -51,10 +51,10 @@ def run(my_songs)
     when "exit"
       input = gets.strip
       exit_jukebox
-      break
     else
       puts "Invalid command"
       input = gets.strip
     end
+    break if input == "exit"
   end
 end
