@@ -55,6 +55,5 @@ def run(songs)
       puts "Invalid command"
       input = gets.strip
     end
-    break if exit_jukebox
   end
 end
