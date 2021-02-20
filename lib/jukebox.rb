@@ -11,3 +11,13 @@ def list(array)
     puts "#{index + 1}. #{song}"
   end
 end
+
+def play(array)
+  puts "Please enter a song name or number:"
+  input = gets.strip
+  if input == array.include?(input)
+    puts "Playing <#{input}>"
+  else
+    puts "Invalid input, please try again"
+  end
+end
