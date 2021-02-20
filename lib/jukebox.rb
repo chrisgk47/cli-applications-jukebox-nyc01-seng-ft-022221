@@ -50,6 +50,7 @@ def run(my_songs)
       input = gets.strip
     when "exit"
       exit_jukebox
+      input = gets.strip
     else
       puts "Invalid command"
       input = gets.strip
